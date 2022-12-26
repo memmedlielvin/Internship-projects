@@ -24,7 +24,7 @@ section {
 
 section div {
   background-color: white;
-  width: 50%;
+  width: 40%;
   padding: 2rem 1rem;
   clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
 }
@@ -35,7 +35,7 @@ section div h1 {
 }
 
 section div hr {
-  border: 1px solid black;
+  border: thin solid black;
   width: 70%;
   margin: 20px auto;
 }
@@ -74,4 +74,8 @@ section div input[type="submit"] {
 section div p {
   text-align: center;
   font-weight: bold;
+}
+
+section div p a {
+  color: #2871aa;
 }

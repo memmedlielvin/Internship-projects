@@ -24,8 +24,8 @@ section {
 
 section div {
   background-color: white;
-  width: 40%;
-  padding: 1rem;
+  width: 30%;
+  padding: 50px 1rem;
   clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
 }
 
@@ -35,7 +35,7 @@ section div h1 {
 }
 
 section div hr {
-  border: 1px solid black;
+  border: thin solid black;
   width: 70%;
   margin: 10px auto;
 }
@@ -57,7 +57,7 @@ section div input {
   border: none;
   outline: none;
   border-radius: 10px;
-  background-color: #f4f4f4;
+  background-color: white;
   box-shadow: 0 4px 4px #ddd;
 }
 
@@ -78,11 +78,20 @@ section div p {
   margin-top: 5px;
 }
 
+section div p#have-account a {
+  color: black;
+}
+
+section div p#login a {
+  color: #2871aa;
+}
+
 #social-network a {
   display: inline-block;
   border-radius: 5px;
   box-shadow: 0 4px 4px #ddd;
   margin-right: 10px;
+  margin-top: 10px;
   padding: 5px;
 }
 
