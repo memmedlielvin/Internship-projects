@@ -346,3 +346,12 @@ input::placeholder {
   font-size: 18px;
   margin-right: 35px;
 }
+
+#flag-country {
+  cursor: pointer;
+}
+
+#flag-country i {
+  color: white;
+  margin: 0 12px;
+}
