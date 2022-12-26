@@ -26,10 +26,7 @@ section div {
   background-color: white;
   width: 40%;
   padding: 1rem;
-  /*border-top-left-radius: 200px 20px;
-    border-top-right-radius: 20px 200px;
-    border-bottom-right-radius: 200px 20px;
-    border-bottom-right-radius: 200px 20px;*/
+  clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
 }
 
 section div h1 {
