@@ -210,11 +210,15 @@ nav ul a {
 
 #fell-our-design {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 48px;
 }
 #fell-our-design img {
-  width: 150px;
-  height: 150px;
-  margin-left: 3rem;
+  width: 170px;
+  height: 120px;
+
+  object-fit: cover;
 }
 
 #fell-our-design h4 {
