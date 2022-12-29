@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>To Do List</h1>
+
+      <div id="search">
+        <div>
+          <label for="title">Title</label
+          ><input type="text" id="title" class="sameInput" />
+        </div>
+        <div id="select-container">
+          <label for="priority">Priority</label>
+          <select id="priority" class="sameInput">
+            <option value="empty"></option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div>
+          <button class="addNew" onclick="showData();">Add new +</button>
+        </div>
+      </div>
+
+      <div id="data">
+        <div class="data-inner">
+        <div class="data-inner-left">
+          <p class="data-p">Buy groceries</p>
+          <span class="data-span">High</span>
+        </div>
+        <div class="data-inner-right">
+          <i class="icon fa-solid fa-pencil" onclick="edit();"></i
+          ><i class="icon fa-regular fa-trash-can" ></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!---->
