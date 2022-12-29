@@ -12,6 +12,8 @@
       referrerpolicy="no-referrer"
     />
 
+    <script src="main.js"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
@@ -49,14 +51,29 @@
           </div>
 
           <div class="px-5 py-3 flex flex-row justify-center items-center">
-            <div class="w-10 flex flex-col justify-center items-center">
-              <img src="clock-small.png" alt="clock-small" />
-              <img class="mt-3 rounded-full" src="img1.png" alt="img1" />
-              <img class="mt-3 rounded-full" src="img2.png" alt="img2" />
-            </div>
-            <div>
+            <div class="w-10 mr-3 flex flex-col justify-center items-center">
               <img
-                class="w-64 h-96 object-cover"
+                onclick="show1();"
+                class="object-cover"
+                src="clock-small.png"
+                alt="clock-small"
+              />
+              <img
+                onclick="show2();"
+                class="mt-3 rounded-full"
+                src="img1.png"
+                alt="img1"
+              />
+              <img
+                onclick="show3();"
+                class="mt-3 rounded-full"
+                src="img2.png"
+                alt="img2"
+              />
+            </div>
+            <div class="w-60 h-96">
+              <img
+                class="w-full h-full object-cover showImgHere"
                 src="clock.png"
                 alt="clock-img"
               />
@@ -83,7 +100,7 @@
               <div class="my-2 mt-5">
                 <button class="w-full bg-black text-white p-2">
                   <i class="text-xs fa-solid fa-trash"></i>
-                  <span class="text-xs">THÊM VÀO GIỎ </span>
+                  <span class="text-xs ml-1">THÊM VÀO GIỎ </span>
                 </button>
               </div>
               <div class="my-2">
@@ -101,14 +118,24 @@
           </div>
 
           <div class="px-5 py-3 flex flex-row justify-center items-center">
-            <div class="w-10 flex flex-col justify-center items-center">
-              <img src="clock-small.png" alt="clock-small" />
-              <img class="mt-3 rounded-full" src="img1.png" alt="img1" />
-              <img class="mt-3 rounded-full" src="img2.png" alt="img2" />
-            </div>
-            <div>
+            <div class="w-10 mr-3 flex flex-col justify-center items-center">
+              <img onclick="show4();" src="clock-small.png" alt="clock-small" />
               <img
-                class="w-64 h-96 object-cover"
+                onclick="show5();"
+                class="mt-3 rounded-full"
+                src="img1.png"
+                alt="img1"
+              />
+              <img
+                onclick="show6();"
+                class="mt-3 rounded-full"
+                src="img2.png"
+                alt="img2"
+              />
+            </div>
+            <div class="w-60 h-96">
+              <img
+                class="w-full h-full object-cover showImgHere2"
                 src="clock.png"
                 alt="clock-img"
               />
@@ -135,7 +162,7 @@
               <div class="my-2 mt-5">
                 <button class="w-full bg-black text-white p-2">
                   <i class="text-xs fa-solid fa-trash"></i>
-                  <span class="text-xs">THÊM VÀO GIỎ </span>
+                  <span class="text-xs ml-1">THÊM VÀO GIỎ </span>
                 </button>
               </div>
               <div class="my-2">
@@ -155,14 +182,24 @@
           </div>
 
           <div class="px-5 py-3 flex flex-row justify-center items-center">
-            <div class="w-10 flex flex-col justify-center items-center">
-              <img src="clock-small.png" alt="clock-small" />
-              <img class="mt-3 rounded-full" src="img1.png" alt="img1" />
-              <img class="mt-3 rounded-full" src="img2.png" alt="img2" />
-            </div>
-            <div>
+            <div class="w-10 mr-3 flex flex-col justify-center items-center">
+              <img onclick="show7();" src="clock-small.png" alt="clock-small" />
               <img
-                class="w-64 h-96 object-cover"
+                onclick="show8();"
+                class="mt-3 rounded-full"
+                src="img1.png"
+                alt="img1"
+              />
+              <img
+                onclick="show9();"
+                class="mt-3 rounded-full"
+                src="img2.png"
+                alt="img2"
+              />
+            </div>
+            <div class="w-60 h-96">
+              <img
+                class="w-full h-full object-cover showImgHere3"
                 src="clock.png"
                 alt="clock-img"
               />
@@ -189,7 +226,7 @@
               <div class="my-2 mt-5">
                 <button class="w-full bg-black text-white p-2">
                   <i class="text-xs fa-solid fa-trash"></i>
-                  <span class="text-xs">THÊM VÀO GIỎ </span>
+                  <span class="text-xs ml-1">THÊM VÀO GIỎ </span>
                 </button>
               </div>
               <div class="my-2">
@@ -207,14 +244,28 @@
           </div>
 
           <div class="px-5 py-3 flex flex-row justify-center items-center">
-            <div class="w-10 flex flex-col justify-center items-center">
-              <img src="rotate-clock.png" alt="clock-small" />
-              <img class="mt-3 rounded-full" src="img1.png" alt="img1" />
-              <img class="mt-3 rounded-full" src="img2.png" alt="img2" />
-            </div>
-            <div>
+            <div class="w-10 mr-3 flex flex-col justify-center items-center">
               <img
-                class="w-64 h-96 object-cover"
+                onclick="show10();"
+                src="rotate-clock.png"
+                alt="clock-small"
+              />
+              <img
+                onclick="show11();"
+                class="mt-3 rounded-full"
+                src="img1.png"
+                alt="img1"
+              />
+              <img
+                onclick="show12();"
+                class="mt-3 rounded-full"
+                src="img2.png"
+                alt="img2"
+              />
+            </div>
+            <div class="w-60 h-96 object-cover">
+              <img
+                class="w-full h-full object-cover showImgHere4"
                 src="clock.png"
                 alt="clock-img"
               />
@@ -241,7 +292,7 @@
               <div class="my-2 mt-5">
                 <button class="w-full bg-black text-white p-2">
                   <i class="text-xs fa-solid fa-trash"></i>
-                  <span class="text-xs">THÊM VÀO GIỎ </span>
+                  <span class="text-xs ml-1">THÊM VÀO GIỎ </span>
                 </button>
               </div>
               <div class="my-2">
