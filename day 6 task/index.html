@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body class="w-full h-full bg-gray-100 flex justify-center items-center">
+    <div class="mx-7 my-5">
+      <h1 class="text-5xl font-semibold">Products</h1>
+
+      <div
+        class="mx-auto mt-5 flex flex-row flex-wrap justify-center items-center"
+      >
+        <!--first div-->
+        <div class="bg-white">
+          <div>
+            <img class="w-20 mx-auto my-3" src="logo.png" alt="logo" />
+          </div>
+
+          <div class="px-5 py-3 flex flex-row justify-center items-center">
+            <div class="w-10 flex flex-col justify-center items-center">
+              <img src="clock-small.png" alt="clock-small" />
+              <img class="mt-3 rounded-full" src="img1.png" alt="img1" />
+              <img class="mt-3 rounded-full" src="img2.png" alt="img2" />
+            </div>
+            <div>
+              <img
+                class="w-64 h-96 object-cover"
+                src="clock.png"
+                alt="clock-img"
+              />
+            </div>
+            <div class="w-72 px-10">
+              <h1 class="text-3xl font-normal mt-2">OTTO</h1>
+              <h2 class="text-1xl font-light">WEIMAR - 40MM</h2>
+              <div class="my-2">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <h3 class="text-sm flex items-center my-3">
+                PRICE: <b class="text-2xl ml-5">2.299.000 đ</b>
+              </h3>
+
+              <p class="text-xs text-gray-600">
+                Thiết kế Bauhaus tối giản của Weimar Otto được Curnon thể hiện
+                trên nền của sự kết hợp màu sắc tinh tế và hiện đại. Cặp dây da
+                màu Sand cùng chi tiết kim xanh chính là điểm nhấn giúp bạn kết
+                hợp hoàn hảo với bất kì bộ trang phục nào.
+              </p>
+
+              <div class="my-2 mt-5">
+                <button class="w-full bg-black text-white p-2">
+                  <i class="text-xs fa-solid fa-trash"></i>
+                  <span class="text-xs">THÊM VÀO GIỎ </span>
+                </button>
+              </div>
+              <div class="my-2">
+                <button class="w-full border p-2">MUA NGAY</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--first div-->
+
+        <!--second div-->
+        <div class="bg-white ml-10">
+          <div>
+            <img class="w-20 mx-auto my-3" src="logo.png" alt="logo" />
+          </div>
+
+          <div class="px-5 py-3 flex flex-row justify-center items-center">
+            <div class="w-10 flex flex-col justify-center items-center">
+              <img src="clock-small.png" alt="clock-small" />
+              <img class="mt-3 rounded-full" src="img1.png" alt="img1" />
+              <img class="mt-3 rounded-full" src="img2.png" alt="img2" />
+            </div>
+            <div>
+              <img
+                class="w-64 h-96 object-cover"
+                src="clock.png"
+                alt="clock-img"
+              />
+            </div>
+            <div class="w-72 px-10">
+              <h1 class="text-3xl font-normal mt-2">OTTO</h1>
+              <h2 class="text-1xl font-light">WEIMAR - 40MM</h2>
+              <div class="my-2">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <h3 class="text-sm flex items-center my-3">
+                PRICE: <b class="text-2xl ml-5">2.299.000 đ</b>
+              </h3>
+
+              <p class="text-xs text-gray-600">
+                Thiết kế Bauhaus tối giản của Weimar Otto được Curnon thể hiện
+                trên nền của sự kết hợp màu sắc tinh tế và hiện đại. Cặp dây da
+                màu Sand cùng chi tiết kim xanh chính là điểm nhấn giúp bạn kết
+                hợp hoàn hảo với bất kì bộ trang phục nào.
+              </p>
+
+              <div class="my-2 mt-5">
+                <button class="w-full bg-black text-white p-2">
+                  <i class="text-xs fa-solid fa-trash"></i>
+                  <span class="text-xs">THÊM VÀO GIỎ </span>
+                </button>
+              </div>
+              <div class="my-2">
+                <button class="w-full bg-black text-white border p-2">
+                  MUA NGAY
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--second div-->
+
+        <!--third div-->
+        <div class="bg-white mt-10">
+          <div>
+            <img class="w-20 mx-auto my-3" src="logo.png" alt="logo" />
+          </div>
+
+          <div class="px-5 py-3 flex flex-row justify-center items-center">
+            <div class="w-10 flex flex-col justify-center items-center">
+              <img src="clock-small.png" alt="clock-small" />
+              <img class="mt-3 rounded-full" src="img1.png" alt="img1" />
+              <img class="mt-3 rounded-full" src="img2.png" alt="img2" />
+            </div>
+            <div>
+              <img
+                class="w-64 h-96 object-cover"
+                src="clock.png"
+                alt="clock-img"
+              />
+            </div>
+            <div class="w-72 px-10">
+              <h1 class="text-3xl font-normal mt-2">OTTO</h1>
+              <h2 class="text-1xl font-light">WEIMAR - 40MM</h2>
+              <div class="my-2">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <h3 class="text-sm flex items-center my-3">
+                PRICE: <b class="text-2xl ml-5">2.299.000 đ</b>
+              </h3>
+
+              <p class="text-xs text-gray-600">
+                Thiết kế Bauhaus tối giản của Weimar Otto được Curnon thể hiện
+                trên nền của sự kết hợp màu sắc tinh tế và hiện đại. Cặp dây da
+                màu Sand cùng chi tiết kim xanh chính là điểm nhấn giúp bạn kết
+                hợp hoàn hảo với bất kì bộ trang phục nào.
+              </p>
+
+              <div class="my-2 mt-5">
+                <button class="w-full bg-black text-white p-2">
+                  <i class="text-xs fa-solid fa-trash"></i>
+                  <span class="text-xs">THÊM VÀO GIỎ </span>
+                </button>
+              </div>
+              <div class="my-2">
+                <button class="w-full border p-2">MUA NGAY</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--third div-->
+
+        <!--fourth div-->
+        <div class="bg-white mt-10 ml-10">
+          <div>
+            <img class="w-20 mx-auto my-3" src="logo.png" alt="logo" />
+          </div>
+
+          <div class="px-5 py-3 flex flex-row justify-center items-center">
+            <div class="w-10 flex flex-col justify-center items-center">
+              <img src="rotate-clock.png" alt="clock-small" />
+              <img class="mt-3 rounded-full" src="img1.png" alt="img1" />
+              <img class="mt-3 rounded-full" src="img2.png" alt="img2" />
+            </div>
+            <div>
+              <img
+                class="w-64 h-96 object-cover"
+                src="clock.png"
+                alt="clock-img"
+              />
+            </div>
+            <div class="w-72 px-10">
+              <h1 class="text-3xl font-normal mt-2">OTTO</h1>
+              <h2 class="text-1xl font-light">WEIMAR - 40MM</h2>
+              <div class="my-2">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <h3 class="text-sm flex items-center my-3">
+                PRICE: <b class="text-2xl ml-5">2.299.000 đ</b>
+              </h3>
+
+              <p class="text-xs text-gray-600">
+                Thiết kế Bauhaus tối giản của Weimar Otto được Curnon thể hiện
+                trên nền của sự kết hợp màu sắc tinh tế và hiện đại. Cặp dây da
+                màu Sand cùng chi tiết kim xanh chính là điểm nhấn giúp bạn kết
+                hợp hoàn hảo với bất kì bộ trang phục nào.
+              </p>
+
+              <div class="my-2 mt-5">
+                <button class="w-full bg-black text-white p-2">
+                  <i class="text-xs fa-solid fa-trash"></i>
+                  <span class="text-xs">THÊM VÀO GIỎ </span>
+                </button>
+              </div>
+              <div class="my-2">
+                <button class="w-full border p-2">MUA NGAY</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--fourth div-->
+      </div>
+    </div>
+  </body>
+</html>
