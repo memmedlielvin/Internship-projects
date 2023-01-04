@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
 
     <title>Task 4 Calculate</title>
   </head>
@@ -13,32 +12,40 @@
     <div id="vector-bg"><img src="Vector 1.png" alt="vector-bg" /></div>
 
     <div id="calculate">
-      <div id="display"></div>
+      <div id="screen-container">
+        <p id="display"></p>
+
+        <div id="equal">=</div>
+
+        <p id="result"></p>
+      </div>
 
       <hr />
 
-      <div id="buttons">
-        <button class="button">C</button>
-        <button class="button">/</button>
-        <button class="button">%</button>
-        <button class="button">x</button>
-        <button class="button">7</button>
-        <button class="button">8</button>
-        <button class="button">9</button>
-        <button class="button">+/-</button>
-        <button class="button">4</button>
-        <button class="button">5</button>
-        <button class="button">6</button>
-        <button class="button">-</button>
-        <button class="button">1</button>
-        <button class="button">2</button>
-        <button class="button">3</button>
-        <button class="button">+</button>
-        <button class="button">.</button>
-        <button class="button">0</button>
-        <button class="button">&larr;</button>
-        <button class="button">=</button>
+      <div id="btns">
+        <button class="btn clear btn-null">C</button>
+        <button class="btn btn-div">/</button>
+        <button class="btn btn-modul">%</button>
+        <button class="btn btn-multi">x</button>
+        <button class="btn btn-num">7</button>
+        <button class="btn btn-num">8</button>
+        <button class="btn btn-num">9</button>
+        <button class="btn">+/-</button>
+        <button class="btn btn-num">4</button>
+        <button class="btn btn-num">5</button>
+        <button class="btn btn-num">6</button>
+        <button class="btn btn-sub">-</button>
+        <button class="btn btn-num">1</button>
+        <button class="btn btn-num">2</button>
+        <button class="btn btn-num">3</button>
+        <button class="btn btn-sum">+</button>
+        <button class="btn btn-dott">.</button>
+        <button class="btn btn-num">0</button>
+        <button class="btn del">&larr;</button>
+        <button class="btn btn-equal">=</button>
       </div>
     </div>
+
+    <script src="main.js"></script>
   </body>
 </html>

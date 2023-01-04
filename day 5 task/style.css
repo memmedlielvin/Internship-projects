@@ -37,35 +37,37 @@ body {
 label {
   font-size: 18px;
 }
-.sameInput {
+#title {
   outline: none;
   width: 198px;
-  height: 25px;
+  height: 30px;
   border-radius: 5px;
   border: 2px solid #e53170;
   margin-top: 8px;
   padding: 10px;
-  font-size: 14px;
+  font-size: 16px;
 }
+
+#title::placeholder {
+  font-size: 15px;
+}
+
 select {
-  appearance: none;
-  padding: 5px;
+  width: 198px;
+  height: 25px;
+  outline: none;
+  margin-top: 8px;
+  color: #b07289;
+  padding: 0 10px;
+  height: 30px;
+
+  border: 2px solid #e53170;
+  border-radius: 5px;
+  font-size: 15px;
 }
 
 select option {
-  padding: 5px;
-  font-size: 18px;
-}
-
-#select-container {
-  position: relative;
-}
-
-#select-container i {
-  position: absolute;
-  top: 60%;
-  right: 10px;
-
+  font-size: 16px;
   color: #e53170;
 }
 
@@ -77,6 +79,7 @@ select option {
   color: white;
   border-radius: 5px;
   margin-top: 30px;
+  cursor: pointer;
 }
 
 #data {

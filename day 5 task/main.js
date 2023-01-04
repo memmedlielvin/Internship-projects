@@ -5,77 +5,93 @@ var titleVal,
   dataInnerLeft,
   dataInnerRight,
   paragraf,
-  x,
+  titleValArr,
+  priorityValArr,
   y,
-  span;
+  span,
+  add,
+  btnDelete,
+  btnEdit,
+  xhr;
+
+add = document.querySelector(".addNew");
+add.addEventListener("click", showData);
+titleValArr = [];
+priorityValArr = [];
 
 function showData() {
-  title = document.querySelector("#title");
-  priority = document.querySelector("#priority");
   titleVal = document.querySelector("#title").value;
   priorityVal = document.querySelector("#priority").value;
   dataContainer = document.querySelector("#data");
+  if (titleVal == "") {
+    alert("Please write Title and choose Priority");
+  } else {
+    dataInnerContainer = document.createElement("div");
+    dataInnerContainer.className = "data-inner";
+    dataContainer.appendChild(dataInnerContainer);
+    dataInnerLeft = document.createElement("div");
+    dataInnerRight = document.createElement("div");
+    dataInnerContainer.appendChild(dataInnerLeft);
+    dataInnerContainer.appendChild(dataInnerRight);
 
-  document.querySelector("#data").innerHTML +=
-    '<div class="data-inner"><div><p class="data-p">' +
-    titleVal +
-    '</p><span class="data-span">' +
-    priorityVal +
-    '</span></div><div><i class="icon fa-solid fa-pencil"></i><i class="icon fa-regular fa-trash-can" ></i></div>';
-  dataInnerContainer = document.querySelector(".data-inner");
+    paragraf = document.createElement("p");
+    paragraf.classList.add("data-p");
+    span = document.createElement("span");
+    span.classList.add("data-span");
+    dataInnerLeft.appendChild(paragraf);
+    dataInnerLeft.appendChild(span);
+    paragraf.innerHTML = titleVal;
+    span.innerHTML = priorityVal;
+    dataInnerRight.innerHTML =
+      "<i class='icon fa-solid fa-pencil' ></i><i class='icon fa-regular fa-trash-can' ></i>";
+    document.querySelector("#title").value = "";
 
-  var del = document.getElementsByClassName("icon");
+    btnDelete = document.querySelectorAll(".fa-trash-can");
 
-  for (i = 0; i < del.length; i++) {
-    del[i].onclick = function () {
-      var delItem;
-      delItem.className = ".display";
+    btnDelete.forEach(function (item) {
+      item.addEventListener("click", function () {
+        item.style.cursor = "pointer";
+        item.parentElement.parentElement.remove();
+        localStorage.removeItem("title");
+        localStorage.removeItem("priority");
+      });
+    });
+
+    btnEdit = document.querySelectorAll(".fa-pencil");
+
+    btnEdit.forEach(function (item) {
+      item.addEventListener("click", function () {
+        let changeTitle =
+          item.parentElement.parentElement.appendChild(paragraf).textContent;
+        let changePriority =
+          item.parentElement.parentElement.appendChild(span).value;
+        document.querySelector("#title").value = changeTitle;
+        document.querySelector("#priority").value = changePriority;
+      });
+    });
+    /********************************************/
+
+    /* xhr = new XMLHttpRequest();
+
+    xhr.open("GET", "data.json", true);
+
+    xhr.onload = function () {
+      if (this.status == 200) {
+        paragraf.innerHTML = JSON.parse(this.responseText).title;
+
+        span.innerHTML = JSON.parse(this.responseText).priority;
+      }
     };
+    xhr.send();*/
+
+    titleValArr.push(titleVal);
+    priorityValArr.push(priorityVal);
+
+    localStorage.setItem("title", titleValArr);
+    localStorage.setItem("priority", priorityValArr);
+
+    localStorage.getItem("title", titleValArr);
+
+    localStorage.getItem("priority", priorityValArr);
   }
-
-  var x = localStorage.setItem("title", titleVal);
-  var y = localStorage.setItem("priority", priorityVal);
 }
-
-/*second code*/
-
-/*
-
-  var titleVal,
-  priorityVal,
-  dataContainer,
-  dataInnerContainer,
-  dataInnerLeft,
-  dataInnerRight,
-  paragraf,
-  x,
-  y,
-  span;
-
-function showData() {
-  title = document.querySelector("#title");
-  priority = document.querySelector("#priority");
-  titleVal = document.querySelector("#title").value;
-  priorityVal = document.querySelector("#priority").value;
-  dataContainer = document.querySelector("#data");
-
-  titleVal = document.querySelector("#title").value;
-  priorityVal = document.querySelector("#priority").value;
-  dataContainer = document.querySelector("#data");
-  dataInnerContainer = document.createElement("div");
-  dataInnerContainer.className = "data-inner";
-  dataContainer.appendChild(dataInnerContainer);
-  dataInnerLeft = document.querySelector(".data-inner-left");
-  dataInnerRight = document.querySelector(".data-inner-right");
-  paragraf = document.createElement("p");
-  paragraf.className = "data-p";
-  span = document.createElement("span");
-  span.className = "data-span";
-  paragraf.innerHTML = titleVal;
-  span.innerHTML = priorityVal;
-  dataInnerRight.innerHTML =
-    "<i class='icon fa-solid fa-pencil' ></i><i class='icon fa-regular fa-trash-can; ></i>";
-  dataInnerContainer.appendChild(dataInnerLeft, dataInnerRight);
-  dataInnerLeft.appendChild(paragraf, span);
-  dataInnerLeft.innerHTML = paragraf + span;
-}*/
