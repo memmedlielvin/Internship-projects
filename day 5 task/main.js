@@ -71,19 +71,6 @@ function showData() {
     });
     /********************************************/
 
-    /* xhr = new XMLHttpRequest();
-
-    xhr.open("GET", "data.json", true);
-
-    xhr.onload = function () {
-      if (this.status == 200) {
-        paragraf.innerHTML = JSON.parse(this.responseText).title;
-
-        span.innerHTML = JSON.parse(this.responseText).priority;
-      }
-    };
-    xhr.send();*/
-
     titleValArr.push(titleVal);
     priorityValArr.push(priorityVal);
 
@@ -95,3 +82,16 @@ function showData() {
     localStorage.getItem("priority", priorityValArr);
   }
 }
+
+/* xhr = new XMLHttpRequest();
+
+    xhr.open("GET", "data.json", true);
+
+    xhr.onload = function () {
+      if (this.status == 200) {
+        paragraf.innerHTML = JSON.parse(this.responseText).title;
+
+        span.innerHTML = JSON.parse(this.responseText).priority;
+      }
+    };
+    xhr.send();*/

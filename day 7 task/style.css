@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+}
+
+body {
+  background-color: #596473;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+
+  color: white;
+  margin: 50px 0;
+}
+
+#container {
+  width: 750px;
+  margin: auto;
+  height: 450px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.icons {
+  width: 40%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #7f5af0;
+  font-weight: bold;
+}
+
+.week {
+  width: 60%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #16161a;
+  font-weight: bold;
+}
+
+.days {
+  width: 70%;
+  height: 200px;
+  margin-left: 16%;
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  color: #16161a;
+}
+
+.days li {
+  width: 14%;
+  color: #16161a;
+}
