@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
+    <link href="output.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -11,55 +11,248 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
   </head>
   <body>
-    <body>
+    
+
+       <section >
       <div class="md:flex justify-center h-screen">
-        <div id="left-container" class="md:w-1/2 px-10 pt-10 h-screen">
-          <img src="img/logo.jpg" alt="logo" />
-          <p class="text-lg font-medium">Sign in to your account</p>
-          <p>Or <span class="text-indigo-600">start your 14-day free trial</span></p>
+      <div id="left-container" class="md:w-1/2 px-10 pt-10 h-screen">
+        <img src="img/logo.jpg" alt="logo" />
+        <p class="text-lg font-medium">Sign in to your account</p>
+        <p>Or <span class="text-indigo-600">start your 14-day free trial</span></p>
 
-          <div class="mt-5">
-            <p>Sing in with</p>
+        <div class="mt-5">
+          <p>Sing in with</p>
 
-            <div class="mt-3 flex">
-              <a class="block px-7 py-1 border text-gray-600 w-1/3 text-center" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
-              <a class="block px-7 py-1 border text-gray-600 w-1/3 text-center ml-5" href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-              <a class="block px-7 py-1 border text-gray-600 w-1/3 text-center ml-5" href="https://github.com"><i class="fa-brands fa-github"></i></a>
-            </div>
+          <div class="mt-3 flex">
+            <a class="block px-7 py-1 border text-gray-600 w-1/3 text-center" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a class="block px-7 py-1 border text-gray-600 w-1/3 text-center ml-5" href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a class="block px-7 py-1 border text-gray-600 w-1/3 text-center ml-5" href="https://github.com"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <p class="or text-gray-600 my-5 text-center relative">Or continue with</p>
+
+        <form action="" class="">
+          <div>
+            <label for="email" class="text-sm text-gray-600 font-medium">Email adress</label>
+
+            <input type="email" class="w-full rounded-lg border border-black-600 outline-none p-4 pr-12 text-sm"  />
           </div>
 
-          <p class="or text-gray-600 my-5 text-center relative">Or continue with</p>
+          <div class="mt-5">
+            <label for="password" class="text-sm text-gray-600 font-medium">Password</label>
 
-          <form action="" class="">
-            <div>
-              <label for="email" class="text-sm text-gray-600 font-medium">Email adress</label>
+            <input type="password" class="w-full rounded-lg border border-black-600 p-4 outline-none pr-12 text-sm" />
+          </div>
 
-              <input type="email" class="w-full rounded-lg border border-black-600 outline-none p-4 pr-12 text-sm" required />
-            </div>
+          <div class="flex justify-between items-center mt-5">
+            <p><input type="checkbox" class="mr-2" />Remember me</p>
+            <a href="#" class="text-indigo-600">Forgot your password?</a>
+          </div>
 
-            <div class="mt-5">
-              <label for="password" class="text-sm text-gray-600 font-medium">Password</label>
-
-              <input type="password" class="w-full rounded-lg border border-black-600 p-4 outline-none pr-12 text-sm" required />
-            </div>
-
-            <div class="flex justify-between items-center mt-5">
-              <p><input type="checkbox" class="mr-2" />Remember me</p>
-              <a href="#" class="text-indigo-600">Forgot your password?</a>
-            </div>
-
-            <button type="submit" class="block w-full rounded-lg bg-indigo-600 px-5 py-3 mt-5 text-sm font-medium text-white">Sign in</button>
-          </form>
-        </div>
-
-        <div class="px-2 md:px-0 md:w-1/2 md:pl-10 md:h-screen">
-          <img src="img/1.jpg" alt="1" class="w-full md:h-screen" />
-        </div>
+          <button type="submit" class="block w-full rounded-lg bg-indigo-600 px-5 py-3 mt-5 text-sm font-medium text-white">Sign in</button>
+        </form>
+        
       </div>
 
+      <div class=" hidden md:block px-2 md:px-0 md:w-1/2 md:pl-10 md:h-screen">
+        <img src="img/1.jpg" alt="1" class="md:w-full md:h-screen" />
+      </div>
+    </div>
+  </section>
+
+    <section class=" mt-12 md:mt-12">
+      <h1 class="text-indigo-600 font-bold text-center text-3xl mt-5">
+        INPUT AND FORM DESING
+      </h1>
+      <h3 class="text-1xl text-center">Two form styles</h3>
+  
+      <div> 
+          
+        <form action="#" class="w-3/4 md:w-1/3 mx-auto mt-1 px-7 py-5 shadow-md">
+          <h1 class=" text-center text-indigo-600 font-bold text-4xl mb-5">Form</h1>
+          <div class="relative">
+            <input
+            id="username"
+              type="text"
+              placeholder="UserName"
+              class="w-full outline-none border p-2 pl-12 rounded-lg placeholder:text-indigo-400"
+            />
+            <i
+              class="fa-regular fa-user absolute top-3 left-5 text-indigo-600"
+            ></i>
+          </div>
+          <div class="relative mt-3">
+            <input
+            id="email"
+              type="email"
+              placeholder="E-mail"
+              class="w-full outline-none border p-2 pl-12 rounded-lg placeholder:text-indigo-400"
+              
+            />
+            <i
+              class="fa-regular fa-envelope absolute top-3 left-5 text-indigo-600"
+            ></i>
+          </div>
+  
+          <div class="relative mt-3">
+            <input
+            id="password"
+              type="password"
+              placeholder="Password"
+              class="w-full outline-none border p-2 pl-12 rounded-lg placeholder:text-indigo-400"
+              
+            />
+            <i class="fa-solid fa-key absolute top-3 left-5 text-indigo-600"></i>
+  
+            <i class="fa-solid fa-exclamation warning absolute w-4 h-4 text-xs text-center rounded-full top-7 right-3 bg-yellow-400 text-white hidden"></i>
+            <i class="fa-solid fa-check success absolute w-4 h-4 text-xs text-center rounded-full top-7 right-3 bg-green-600 text-white hidden"></i>
+            <i class="fa-solid fa-xmark danger absolute w-4 h-4 text-xs text-center rounded-full top-7 right-3 bg-red-500 text-white hidden"></i>
+  
+           <div id="warn" class="flex justify-between items-center mt-2 hidden">
+  
+  
+              <p id="warn-text"></p>
+              
+  
+                  <div class="flex  ">
+                      <hr class="border-2 border-red-500 w-10 ">
+                      <hr class="border-2 border-yellow-400 w-10">
+                      <hr class="border-2 border-green-600 w-10">
+                  </div>
+  
+  
+           </div>
+          
+          </div>
+  
+          <div class="relative mt-3">
+            <select
+              name=""
+              id=""
+              class="w-full outline-none border p-2 pl-12 rounded-lg text-indigo-600 appearance-none"
+            >
+              <option value="Country">Country</option>
+              <option value="Azerbaijan">Azerbaijan</option>
+              <option value="Russian">Russian</option>
+              <option value="England">England</option>
+              <option value="Turkey">Turkey</option>
+            </select>
+            <i
+              class="fa-solid fa-globe absolute top-3 left-5 text-indigo-600"
+            ></i>
+            <i class="fa-solid fa-angle-down absolute top-3 right-5 text-indigo-600""></i>
+          </div>
+  
+  
+  
+          <div class=" mt-3">
+              <p class="text-indigo-600 text-xl mb-2">Level of development</p>
+  
+              <div class="flex justify-between items-center">
+  
+  
+                  <div class="border border-gray-300 py-2 w-1/3 flex justify-center items-center">
+  
+  
+                      <input type="radio" name="level" class=" w-4 h-4 ">
+                      <span class="text-indigo-400 ml-2 text-sm md:text-1xl">Basic</span>
+  
+  
+                  </div>
+  
+                  <div class="border border-gray-300 py-2 w-1/3 flex justify-center items-center ml-3">
+  
+  
+                      <input type="radio" name="level" class="w-4 h-4 ">
+                      <span class="text-indigo-400 ml-2 text-sm md:text-1xl">Medium</span>
+  
+  
+                  </div>
+  
+                  <div class="border border-gray-300 py-2 w-1/3 flex justify-center items-center ml-3">
+  
+  
+                      <input type="radio" name="level" class=" w-4 h-4 ">
+                      <span class="text-indigo-400 ml-2 text-sm md:text-1xl">Advanced</span>
+  
+  
+                  </div>
+  
+  
+              </div>
+          
+              
+            </div>
+  
+  
+            <div class=" mt-3">
+              <p class="text-indigo-600 text-xl mb-2">Programming skills</p>
+  
+              <div class="flex justify-between items-center">
+  
+  
+                  <div class="border border-gray-300 py-2 w-1/3 flex justify-center items-center">
+  
+  
+                      <input type="checkbox"  class="md:w-4 md:h-4">
+                      <span class="text-indigo-400 ml-2 text-sm md:text-1xl">Java</span>
+  
+  
+                  </div>
+  
+                  <div class="border border-gray-300 py-2 w-1/3 flex justify-center items-center ml-3">
+  
+  
+                      <input type="checkbox" name="level" class="w-4 h-4">
+                      <span class="text-indigo-400 ml-2 text-sm md:text-1xl">Python
+                      </span>
+  
+  
+                  </div>
+  
+                  <div class="border border-gray-300 py-2 w-1/3 flex justify-center items-center ml-3">
+  
+  
+                      <input type="checkbox"  class="w-4 h-4">
+                      <span class="text-indigo-400 ml-2 text-sm md:text-1xl">JavaScript</span>
+  
+  
+                  </div>
+  
+  
+              </div>
+          
+              
+            </div>
+  
+          
+  
+              <input  type="submit" value="Send" id= "submit" class="mt-5 w-full  outline-none border p-2  rounded-md bg-indigo-600 text-white">
+                  
+               
+  
+  
+  
+  
+        </form>
+      </div>
+  
+  
+      
+    </section>
+  
+
+
+
+
+    
       <script src="main.js"></script>
-    </body>
+    
   </body>
 </html>
