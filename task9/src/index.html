@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="container" class="w-4/5 mt-5 mx-auto bg-black p-2 rounded-2xl">
+      <h1 class="text-white text-5xl text-center">Word Game</h1>
+      <div class="w-4/5 mx-auto flex justify-between items-center">
+        <div id="time" class="text-white bg-gray-400 rounded-full w-20 h-20 flex justify-center items-center p-2">
+          <p>Time</p>
+        </div>
+        <p class="text-white bg-gray-400 rounded-full px-5 py-2">Score: 10</p>
+        <button id="btn_start" class="text-black bg-gray-100 text-white-500 border px-10 py-2">Start</button>
+      </div>
+
+      <div class="flex justify-between mt-5 px-10 mx-auto">
+        <div id="left" class="w-64 h-60 bg-neutral-900 p-3 rounded-xl">
+          <h1 class="text-white text-center font-bold text-2xl">How to play</h1>
+          <ul class="text-white w-56 bg-black-500 list-style-disc list-inside mt-2">
+            <li class="mb-2">Click the start button to begin</li>
+            <li class="mb-2">Find as many words as you can</li>
+            <li class="mb-2">You have only 30 second for each word</li>
+            <li class="mb-2">If you want to change the word click the "Next word" button</li>
+          </ul>
+        </div>
+        <div id="center" class="w-1/2">
+          <div id="show_display" class="flex justify-center items-center">
+            <p class="w-10 h-10 bg-gray-300"></p>
+            <p class="w-10 h-10 bg-gray-300"></p>
+            <p class="w-10 h-10 bg-gray-300"></p>
+            <p class="w-10 h-10 bg-gray-300"></p>
+            <p class="w-10 h-10 bg-gray-300"></p>
+            <p class="w-10 h-10 bg-gray-300"></p>
+            <p class="w-10 h-10 bg-gray-300"></p>
+            <p class="w-10 h-10 bg-gray-300"></p>
+            <p class="w-10 h-10 bg-gray-300"></p>
+            <p class="w-10 h-10 bg-gray-300"></p>
+          </div>
+
+          <div id="hidden_display" class="flex justify-between items-center hidden">
+            <p class="w-10 h-10 rounded bg-gray-300"></p>
+            <p class="w-10 h-10 rounded bg-gray-300"></p>
+            <p class="w-10 h-10 rounded bg-gray-300"></p>
+            <p class="w-10 h-10 rounded bg-gray-300"></p>
+            <p class="w-10 h-10 rounded bg-gray-300"></p>
+            <p class="w-10 h-10 rounded bg-gray-300"></p>
+            <p class="w-10 h-10 rounded bg-gray-300"></p>
+            <p class="w-10 h-10 rounded bg-gray-300"></p>
+            <p class="w-10 h-10 rounded bg-gray-300"></p>
+            <p class="w-10 h-10 rounded bg-gray-300"></p>
+          </div>
+
+          <div class="w-3/4 mx-auto text-center flex flex-wrap mt-5">
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">a</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">b</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">c</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">d</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">e</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">f</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">g</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">h</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">i</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">j</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">k</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">l</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">m</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">n</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">o</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">p</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">q</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">r</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">s</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">t</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">u</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">v</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">w</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">x</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">y</button>
+            <button class="text-white rounded-xl w-12 bg-cyan-400 py-2 m-2 shadow shadow-cyan-300">z</button>
+          </div>
+        </div>
+
+        <div id="right w-1/3 flex flex-col ">
+          <button class="bg-gray-100 text-white-500 border px-5 py-2">Next word</button><br />
+          <button class="bg-gray-100 text-white-500 border mt-2 px-10 py-2">Hint</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
